@@ -1,5 +1,5 @@
 ---
-- hosts: awx_box
+- hosts: docker_box
   gather_facts: False
 
   vars:

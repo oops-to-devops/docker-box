@@ -8,7 +8,7 @@
 
 
   vars_files:
-    - ./awx_vars.yml
+    - ./docker_vars.yml
 
   pre_tasks:
     - debug: msg="Pre tasks section"

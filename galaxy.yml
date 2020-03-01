@@ -1,0 +1,17 @@
+namespace: "softasap"
+name: "docker_box"
+description: Configures server for use with docker
+version: "0.0.1"
+readme: "Readme.md"
+authors:
+    - "Vyacheslav Voronenko"
+dependencies:
+license:
+    - "MIT"
+tags:
+    - softasap
+    - docker
+repository: "https://github.com/oops-to-devops/docker_box.git"
+documentation: "https://github.com/oops-to-devops/docker_box/blob/master/README.md"
+homepage: "https://www.softasap.com"
+issues: "https://github.com/orgs/oops-to-devops/projects/1"

@@ -38,6 +38,11 @@
 
   roles:
       - {
+         role: "sa-python3",
+         tags: ["create", "sa_docker"],
+         when: box_option_install_python3
+        }
+      - {
          role: "sa-docker",
          tags: ["create", "sa_docker"]
         }

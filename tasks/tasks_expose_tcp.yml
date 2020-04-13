@@ -1,0 +1,41 @@
+- name: Docker | Reconfigure docker to be compatible with gitlab docker shared executor
+  template:
+      src: "daemon.json.j2"
+      dest: "/etc/docker/daemon.json"
+      mode: "u=rw,g=r,o=r"
+      owner: "root"
+      group: "docker"
+  become: yes
+  tags:
+    - gitlab
+
+- name: Docker | Put overrides for docker service (1/2)
+  file: path="/etc/systemd/system/docker.service.d" state="directory"
+  become: yes
+  tags:
+    - gitlab
+
+- name: Docker | Put overrides for docker service (2/2)
+  template:
+      src: "override.conf.j2"
+      dest: "/etc/systemd/system/docker.service.d/override.conf"
+  become: yes
+  tags:
+    - gitlab
+
+- name: Docker | Restart docker service
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: docker
+  become: yes
+  tags:
+    - gitlab
+
+- name: Docker | Add docker alias for docker host
+  lineinfile:
+    dest: /etc/hosts
+    line: "127.0.0.1 docker"
+    state: present
+  become: yes
+

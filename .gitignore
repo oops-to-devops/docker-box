@@ -11,4 +11,4 @@ roles/**/molecule
 roles/**/tests/
 roles/**/meta
 roles/**/.travis.yml
-
+*.bak

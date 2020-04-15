@@ -11,4 +11,7 @@ roles/**/molecule
 roles/**/tests/
 roles/**/meta
 roles/**/.travis.yml
+roles/**/.gitignore
+roles/**/Pipfile*
+roles/**/.ansible-lint
 *.bak

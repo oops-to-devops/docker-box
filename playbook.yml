@@ -39,6 +39,7 @@
   roles:
       - {
          role: "sa-python3",
+         python_version: "{{ box_python3_version }}",
          tags: ["create", "sa_docker"],
          when: box_option_install_python3
         }

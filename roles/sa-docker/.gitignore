@@ -1,6 +1,0 @@
-box-example/roles
-__pycache__/
-**/*/__pycache__
-*.retry
-*.pyc
-.venv

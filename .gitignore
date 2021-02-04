@@ -14,4 +14,7 @@ roles/**/.travis.yml
 roles/**/.gitignore
 roles/**/Pipfile*
 roles/**/.ansible-lint
+roles/**/.github
+roles/**/.pre-commit-config.yaml
+roles/**/.yamllint
 *.bak

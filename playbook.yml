@@ -45,6 +45,9 @@
         }
       - {
          role: "sa-docker",
+         option_install_docker_compose: "{{ box_option_install_docker_compose }}",
+         option_install_docker_registry: "{{ box_option_install_docker_registry }}",
+         option_install_docker_python: "{{ box_option_install_docker_python }}",
          tags: ["create", "sa_docker"]
         }
   tasks:

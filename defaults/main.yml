@@ -1,4 +1,10 @@
 ---
 
+# Install python3 using dedicated role - for example, for  outdated OSes with 3.5 
 box_option_install_python3: false
 box_python3_version: "3.6.10"
+# Install additional missing python parts via docker role itself (might be outdated)
+box_option_install_docker_python: false
+box_option_install_docker_compose: false
+box_option_install_docker_registry: false
+

@@ -1,7 +1,7 @@
 namespace: "softasap"
 name: "docker_box"
 description: Configures server for use with docker
-version: 0.7.0
+version: 0.8.0
 readme: "Readme.md"
 authors:
     - "Vyacheslav Voronenko"
